@@ -2,7 +2,7 @@
 pacman::p_load(dplyr, glmnet, caret)
 
 # set working directory
-setwd("C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/emotion_label/")
+setwd(".../emotion_label/")
 
 #read data
 x = as.matrix(read.table("X2_label.txt"))
