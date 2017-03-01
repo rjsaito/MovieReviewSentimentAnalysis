@@ -36,8 +36,8 @@ def read_file(filename):
 
 ### Data Set 1: Sentiment Analysis (2-class Classification)
 # Read files
-path_neg = "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/review_polarity/txt_sentoken/neg/"
-path_pos = "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/review_polarity/txt_sentoken/pos/"
+path_neg = ".../neg/"
+path_pos = ".../pos/"
 
 neg_reviews = [read_txt(join(path_neg , f)) for f in listdir(path_neg)]
 pos_reviews = [read_txt(join(path_pos , f)) for f in listdir(path_pos)]
