@@ -38,7 +38,7 @@ def read_file(filename):
 
 ### Data Set 2: Sentiment Analysis (2-class Classification)
 # Read files
-file = "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/emotion/emotion_data_X.txt"
+file = ".../emotion_data_X.txt"
 with open(file) as f:
     reviews2 = f.readlines()
 
@@ -57,7 +57,7 @@ vc_tfidf = sklearn.feature_extraction.text.TfidfVectorizer(min_df=3, max_df=0.9)
 Xtfidf2 = vc_tfidf.fit_transform(reviews2).toarray()
 
 # Emotion
-file = "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/emotion/y.txt"
+file = ".../y.txt"
 with open(file) as f:
     y2 = f.readlines()
 y2 = np.asarray(y2)
