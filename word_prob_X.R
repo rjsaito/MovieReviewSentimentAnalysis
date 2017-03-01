@@ -2,8 +2,8 @@ if(!"pacman" %in% installed.packages()) install.packages("pacman")
 pacman::p_load(tm, readr, dplyr)
 
 # path to reviews
-neg_review_path = "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/review_polarity/txt_sentoken/neg/"
-pos_review_path = "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/review_polarity/txt_sentoken/pos"
+neg_review_path = ".../neg/"
+pos_review_path = ".../pos"
 
 # read all negative reviews
 neg_reviews = NULL
@@ -90,7 +90,7 @@ for(k in 1:length(i)){
 }
 
 #write
-write.table(X1_ppos, "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/X1_ppos.txt", 
+write.table(X1_ppos, ".../X1_ppos.txt", 
 	row.names = F, col.names = F, quote = F)
 
 
