@@ -3,8 +3,8 @@ pacman::p_load(dplyr, glmnet)
 write.file = F
 
 # read data
-test = readLines("C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/emotion/test.txt")
-train = readLines("C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/emotion/train.txt")
+test = readLines(".../test.txt")
+train = readLines(".../train.txt")
 
 # split label
 test.mat = do.call(rbind, strsplit(test, ' (?=[^ ]+$)', perl=TRUE))
@@ -21,9 +21,9 @@ newdataX = newdata[,1]
 newdataY = newdata[,2]
 
 #write out
-if(write.file) write.table(newdataX, "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/emotion/emotion_data_X.txt", 
+if(write.file) write.table(newdataX, ".../emotion_data_X.txt", 
 	row.names = F, col.names = F, quote = F)
-if(write.file) write.table(newdataY, "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/emotion/y.txt", 
+if(write.file) write.table(newdataY, "...y.txt", 
 	row.names = F, col.names = F, quote = F)
 
 
@@ -38,9 +38,9 @@ newdata_cast2[,2:9] = as.numeric(!is.na(newdata_cast2[,2:9]))
 newdata2X = newdata_cast2[,1]
 newdata2Y = newdata_cast2[,2:9]
 
-if(write.file) write.table(newdata2X, "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/emotion/emotion_label_data_X.txt", 
+if(write.file) write.table(newdata2X, ".../emotion_label_data_X.txt", 
 	row.names = F, col.names = F, quote = F)
-if(write.file) write.table(newdata2Y, "C:/Users/rjsai/Dropbox/UMN Courses/CSCI 5525/project/emotion/y_matrix.txt", 
+if(write.file) write.table(newdata2Y, ".../y_matrix.txt", 
 	row.names = F, col.names = F, quote = F)
 
 
