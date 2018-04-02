@@ -4,6 +4,6 @@ This repository contains Python/R Codes, [Presentation Slides](https://github.co
 
 Course Project from CSCI 5525: Machine Learning, University of Minnesota Twin Cities.
 
-Contributors: Sijie He, Weiwen Leung
+Collaborators: Sijie He, Weiwen Leung
 
 
